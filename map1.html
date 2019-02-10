@@ -1,8 +1,16 @@
+utor 
+ 
+Raw
+Blame
+History
+
+82 lines (67 sloc) 2.74 KB 
+
 <!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"/>
 
 
 
-<title>危機一髪回避</title>
+<title>危機一髪</title>
 
 
 
@@ -30,11 +38,11 @@ window.onload = function() {
 
 	var map = initMap('mapid')
 
-	map.setZoom(400)
+	map.setZoom(16)
 
 	map.panTo([ 35.943560,136.188917 ]) // 鯖江駅
 
-	
+	map.addIcon(35.944571, 136.186228 , "Hana道場", "icon/hanadojo.png", 64)
 
 
 
@@ -79,7 +87,8 @@ window.onload = function() {
 			)
 
 		} limit 1000
-	
+
+	`
 
 	var p = map.getCenter()
 
@@ -133,22 +142,18 @@ window.onload = function() {
 
 body { margin: 0; font-family: sans-serif; text-align: center; }
 
-h1 { font-size: 5vw; margin: 0; color:red;}
+h1 { font-size: 5vw; margin: 0; }
 
 #mapid { height: 60vh; }
-span{
-background: #808080;
-	}
 
 
 
 </style></head><body>
 
 
-<span>
-<h1>危機一髪回避</h1>
-<p>近くの電源SOPTをタップしてください</p>
-</span>
+
+<h1>危機一髪</h1>
+
 
 <div id="mapid"></div>
 
